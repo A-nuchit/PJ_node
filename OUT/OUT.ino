@@ -6,14 +6,12 @@
 const char* ssid = "Burn__2G";
 const char* password = "moominburn";
 
-// Change the variable to your Raspberry Pi IP address, so it connects to your MQTT broker
 const char* mqtt_server = "172.26.5.224";
 
 // Initializes the espClient
 WiFiClient espClient;
 PubSubClient client(espClient);
 
-// Connect an LED to each GPIO of your ESP8266
 const int ledGPIO5 = 5;
 const int ledGPIO4 = 4;
 
